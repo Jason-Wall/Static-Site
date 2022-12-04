@@ -4,7 +4,7 @@ body{
 .hero-main{
     background-color: #1f2937;
     color: #f9faf8;
-    padding: 1em 20vh;
+    padding: 1em 10vw;
 }
 
 
@@ -13,14 +13,27 @@ body{
     display: flex;
     margin: 0 auto;  
     padding: 0.5em 0;
+    gap: 20px;
+    
+    color: #f9faf8;
+    font-size: 24px;
 }
 
 .header-links{
     display: flex;
     justify-content: center;
+    gap: 20px;
     padding: 0;
     margin: 0;
+    list-style: none;
 }
+
+.header-links a{
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
 
 .hero-body{
     display: flex;
@@ -29,9 +42,16 @@ body{
     gap: 3vw;
 }
 
-.hero-right, .hero-left{
-    /* width: 40vw; */
+.hero-text1{
+    font-size: 48px;
+    font-weight: 800;
 }
+
+.hero-text2{
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
 
 .hero-right{
     display: flex;
@@ -40,11 +60,28 @@ body{
     object-fit: fill;
 }
 
+button{
+    background-color: #3882f6;
+    color: #f9faf8;
+    border-radius: 5px;
+    border: #f9faf8 solid 1px;
+    height: max-content;
+    padding: 5px 15px;
+    margin: 10px 0;
+    min-width: fit-content;
+}
+
 .info-main{
-    padding: 1em 20vh;
+    padding: 1em 20vw;
     margin: 10px;
     text-align: center;
     height:max-content;
+}
+
+.info-header{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .box-container{
@@ -53,7 +90,7 @@ body{
 }
 
 .boxes{
-gap: 1vh;
+gap: 1vw;
 display: flex;
 flex-direction: column;
 align-items: space-between;
@@ -61,12 +98,16 @@ align-items: space-between;
 
 .boxes img{
     width: 100%;
+    border-radius: 10px;
+    border: #3882f6 solid 2px;
+    max-width: 20vw;
    }
 
 .quote-main{
     background-color: #e5e7eb;
     color: #1f2937;
-    padding: 1em 20vh;
+    padding: 1em 20vw;
+    font-style: italic;
 }
 
 .quote{
@@ -79,11 +120,17 @@ align-items: space-between;
 
 .action-main{
     border-radius: 10px;    
-    margin: 1em 20vh;
-    padding: 1em;
+    margin: 1em 10vw;
+    padding: 20px 50px;
     background-color: #3882f6;
     color: #f9faf8;
     
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.action-header{
+    font-weight: bold;
 }
